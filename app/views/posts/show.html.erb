@@ -17,12 +17,14 @@
 
 <p>
 	<b>Comments:</b>
+	<br />
+	<br />
 	<% @comments.each do |comment| %>
 		<% if @comment.posted_on == @post.title %>
-			<p><%= @comment.author %></p><br />
-			<p><%= @comment.body %></p><br />
+			<b>Posted by:</b>
+			<p><%= @comment.author %></p>
+			<br />
+			<p><%= @comment.body %></p>
+			<br />
 		<% end %>
 	<% end %>
-		
-
-<%= link_to 'Back', home_page_index_path %>

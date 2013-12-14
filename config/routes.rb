@@ -8,7 +8,7 @@ Blog::Application.routes.draw do
 
   post "home_page/verify"
 
-  post "home_page/index"
+  get "home_page/index"
 
   get "home_page/login"
 
