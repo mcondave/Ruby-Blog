@@ -1,12 +1,16 @@
 Blog::Application.routes.draw do
-<<<<<<< HEAD
-  resources :users
 
-=======
+  get "contributor/index"
+
+  post "contributor/show"
+
+  post "contributor/add"
+
+  post "home_page/verify"
+
   post "home_page/index"
 
-  post "home_page/login"
->>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
+  get "home_page/login"
 
   resources :comments
 
@@ -14,12 +18,9 @@ Blog::Application.routes.draw do
   resources :posts
 
 
-<<<<<<< HEAD
-=======
   resources :users
 
 
->>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -69,11 +70,7 @@ Blog::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-<<<<<<< HEAD
-  # root :to => 'welcome#index'
-=======
   root :to => 'home_page#index'
->>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
 
   # See how all your routes lay out with "rake routes"
 

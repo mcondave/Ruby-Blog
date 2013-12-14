@@ -2,13 +2,8 @@
 
 <table>
   <tr>
-<<<<<<< HEAD
     <th>User name</th>
     <th>User password</th>
-=======
-    <th>Name</th>
-    <th>Password</th>
->>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
     <th></th>
     <th></th>
     <th></th>
@@ -16,13 +11,8 @@
 
 <% @users.each do |user| %>
   <tr>
-<<<<<<< HEAD
     <td><%= user.user_name %></td>
     <td><%= user.user_password %></td>
-=======
-    <td><%= user.name %></td>
-    <td><%= user.password %></td>
->>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

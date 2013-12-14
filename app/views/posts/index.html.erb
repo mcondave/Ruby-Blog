@@ -3,12 +3,8 @@
 <table>
   <tr>
     <th>Title</th>
-<<<<<<< HEAD
     <th>Author</th>
     <th>Body</th>
-=======
-    <th>User name</th>
->>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
     <th></th>
     <th></th>
     <th></th>
@@ -17,12 +13,8 @@
 <% @posts.each do |post| %>
   <tr>
     <td><%= post.title %></td>
-<<<<<<< HEAD
     <td><%= post.author %></td>
     <td><%= post.body %></td>
-=======
-    <td><%= post.user_name %></td>
->>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
