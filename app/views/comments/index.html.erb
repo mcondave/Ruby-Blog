@@ -2,9 +2,13 @@
 
 <table>
   <tr>
+<<<<<<< HEAD
     <th>Author</th>
     <th>Body</th>
     <th>Posted on</th>
+=======
+    <th>User name</th>
+>>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +16,13 @@
 
 <% @comments.each do |comment| %>
   <tr>
+<<<<<<< HEAD
     <td><%= comment.author %></td>
     <td><%= comment.body %></td>
     <td><%= comment.posted_on %></td>
+=======
+    <td><%= comment.user_name %></td>
+>>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
     <td><%= link_to 'Show', comment %></td>
     <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
     <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

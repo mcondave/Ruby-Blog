@@ -1,9 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+<<<<<<< HEAD
   user_name: MyString
   user_password: MyString
 
 two:
   user_name: MyString
   user_password: MyString
+=======
+  name: MyString
+  password: MyString
+
+two:
+  name: MyString
+  password: MyString
+>>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b

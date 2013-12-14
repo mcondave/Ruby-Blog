@@ -2,6 +2,7 @@
 
 one:
   title: MyString
+<<<<<<< HEAD
   author: MyString
   body: MyString
 
@@ -9,3 +10,10 @@ two:
   title: MyString
   author: MyString
   body: MyString
+=======
+  user_name: MyString
+
+two:
+  title: MyString
+  user_name: MyString
+>>>>>>> 9c24d764c308ef4e47bd021e28d7e3565136bc4b
