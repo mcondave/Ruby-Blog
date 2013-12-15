@@ -1,7 +1,7 @@
 <h2>Login</h2>
 	<h3><%= form_for :user, :url => {:action => :verify} do |form| %>
-		<p><label_for="user_name">User Name:</label>
+		<p><label for="user_name">User Name:</label>
 			<%= form.text_field :user_name, :size => 20 %></p>
-		<p><label_for="user_password">Password:</label><%= form.password_field :user_password, :size => 20 %></p>
+		<p><label for="user_password">Password:</label><%= form.password_field :user_password, :size => 20 %></p>
 		<p><%= submit_tag "Login" %></p></h3>
 		<% end %>
