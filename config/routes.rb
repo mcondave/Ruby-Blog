@@ -1,25 +1,16 @@
 Blog::Application.routes.draw do
 
   get "contributor/index"
-
+  get "home_page/index"
+  get "home_page/login"
+  
   post "contributor/show"
-
   post "contributor/add"
-
   post "home_page/verify"
 
-  get "home_page/index"
-
-  get "home_page/login"
-
   resources :comments
-
-
   resources :posts
-
-
   resources :users
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
