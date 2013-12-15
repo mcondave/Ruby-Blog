@@ -2,7 +2,7 @@ Blog::Application.routes.draw do
 
   get "contributor/index"
 
-  post "contributor/show"
+  get "contributor/show"
 
   post "contributor/add"
 

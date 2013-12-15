@@ -15,16 +15,8 @@
   <%= @post.body %>
 </p>
 
-<p>
-	<b>Comments:</b>
-	<br />
-	<br />
+<p><b>Comments:</b></p>
 	<% @comments.each do |comment| %>
-		<% if @comment.posted_on == @post.title %>
-			<b>Posted by:</b>
-			<p><%= @comment.author %></p>
-			<br />
+			<b>Posted by: <%= @comment.author %></b>
 			<p><%= @comment.body %></p>
-			<br />
-		<% end %>
 	<% end %>
