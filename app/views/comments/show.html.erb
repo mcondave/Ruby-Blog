@@ -1,19 +1,14 @@
 <p id="notice"><%= notice %></p>
+<table class="table table-condensed blog">
+	<tr>
+		<td><strong>Author</strong></td>
+		<td><%= @comment.author %></td>
+	</tr>
+	<tr>
+		<td><strong>Body</strong></td>
+		<td><%= @comment.body %></td>
+	</tr>
+</table>
 
-<p>
-  <b>Author:</b>
-  <%= @comment.author %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @comment.body %>
-</p>
-
-<p>
-  <b>Posted on:</b>
-  <%= @comment.posted_on %>
-</p>
-
-
-<%= link_to 'Edit', edit_comment_path(@comment) %>
+<%= link_to 'Edit', edit_comment_path(@comment), :class=>"btn btn-default footer" %>
+<%= link_to 'Back', :back, :class=>"btn btn-default backfooter" %>
