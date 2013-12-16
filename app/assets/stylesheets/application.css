@@ -7,6 +7,14 @@ a:hover{
 	margin-right:auto;
 	margin-left:auto;
 }
+.log{
+	position:relative;
+	left:1%;
+}
+.reg{
+	position:relative;
+	left:2%;
+}
 .footer{
 	position:absolute;
 	left:15%;
@@ -14,6 +22,9 @@ a:hover{
 .backfooter{
 	position:absolute;
 	left:1%;
+}
+.space{
+	top:30%;
 }
 .commentauthor{
 	text-indent:1em;

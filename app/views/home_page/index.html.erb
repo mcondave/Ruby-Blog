@@ -1,14 +1,14 @@
 <h1>Bloge</h1>
-	<%= link_to 'Login', home_page_login_path, {:class=>"btn btn-default", :method => "get"} %>
-	<%= link_to 'Register', new_user_path, {:class=>"btn btn-default"} %>
+	<%= link_to 'Login', home_page_login_path, {:class=>"btn btn-default log", :method => "get"} %>
+	<%= link_to 'Register', new_user_path, {:class=>"btn btn-default reg"} %>
 	<h2>User Posts</h2>
-		<table class="table table-hover">
+		<table class="blog table table-hover table-condensed">
 			<tr>
 				<th>Title</th>
 			</tr>
 			<% @posts.each do |post| %>
 			<tr>
-				<td><%= link_to post.title, post %></td>
+				<td><%= link_to post.title, post%></td>
 			</tr>
 			<% end %>
 		</tr>

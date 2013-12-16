@@ -1,7 +1,16 @@
 <h2>Login</h2>
-	<h3><%= form_for :user, :url => {:action => :verify} do |form| %>
-		<p><label for="user_name">User Name:</label>
-			<%= form.text_field :user_name, :size => 20 %></p>
-		<p><label for="user_password">Password:</label><%= form.password_field :user_password, :size => 20 %></p>
-		<p><%= submit_tag "Login" %></p></h3>
+	<h3><%= form_for :user, :url => {:action => :verify}, html: {role: "form", class: "form-inline"} do |form| %>
+		<p>
+			<div class="form-group">
+				<label for="user_name">User Name:</label>
+				<%= form.text_field :user_name, :size => 20, :class=>"form-control" %>
+			</div>
+		</p>
+		<p>
+			<div class="form-group">
+				<label for="user_password">Password:</label>
+				<%= form.password_field :user_password, :size => 20, :class=>"form-control"%>
+			</div>
+		</p>
+		<p><%= submit_tag "Login", :class=>"btn btn-default log" %></p></h3>
 		<% end %>

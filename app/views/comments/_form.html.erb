@@ -1,4 +1,4 @@
-<%= form_for(@comment) do |f| %>
+<%= form_for @comment, html: {role: "form", class: "form-inline" } do |f|%>
   <% if @comment.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
@@ -13,16 +13,16 @@
 
   <div class="form-group">
     <%= f.label :author %><br />
-    <%= f.text_field :author %>
+    <%= f.text_field :author, :class=>"form-control" %>
   </div>
   <div class="form-group">
     <%= f.label :body %><br />
-    <%= f.text_field :body %>
+    <%= f.text_field :body, :class=>"form-control" %>
   </div>
   <div class="form-group">
     <%= f.hidden_field :posted_on, :value => params[:title] %>
   </div>
   <div class="actions">
-    <%= f.submit :class=>"btn btn-default"%>
+    <%= f.submit :class=>"btn btn-default footer space"%>
   </div>
 <% end %>
