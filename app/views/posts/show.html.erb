@@ -14,9 +14,20 @@
   <b>Body:</b>
   <%= @post.body %>
 </p>
-
-<p><b>Comments:</b></p>
-	<% @comments.each do |comment| %>
-			<b>Posted by: <%= @comment.author %></b>
-			<p><%= @comment.body %></p>
-	<% end %>
+<style>
+  td{
+    border:1px solid black;
+    position:relative;
+  }
+</style>
+<table style="text-indent:1em;">
+  <th><b>Comments:</b></th>
+  <% @comments.each do |comment| %>
+  <tr style="text-indent:2em;">
+    <td><b><%= @comment.author %></b></td>
+  </tr>
+  <tr style="text-indent:2em;">
+    <td style="text-indent:4em;"><%= @comment.body %></td>
+  </tr>
+  <% end %>
+</table>
