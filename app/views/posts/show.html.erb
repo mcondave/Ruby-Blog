@@ -21,7 +21,7 @@
     position:relative;
   }
 </style>
-<table style="text-indent:1em;">
+<table style="text-indent:1em;" width="500px">
   <th><b>Comments:</b></th>
   <% @comments.each do |comment| %>
 	  <% if comment.posted_on == @post.title %>
@@ -37,5 +37,5 @@
 
 <%= link_to 'Leave a comment', new_comment_path(:title => @post.title) %>
 
-<%= link_to 'Back', home_page_index_path %>
+<%= link_to 'Back', :back %>
 
