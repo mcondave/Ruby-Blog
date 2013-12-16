@@ -1,3 +1,23 @@
 a:hover{
 	text-decoration:none;
 }
+.blog{
+	max-width:1000px;
+	min-width:1000px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.footer{
+	position:absolute;
+	left:15%;
+}
+.backfooter{
+	position:absolute;
+	left:1%;
+}
+.commentauthor{
+	text-indent:1em;
+}
+.actualcomment{
+	text-indent:3em;
+}

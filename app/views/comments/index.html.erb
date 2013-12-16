@@ -1,6 +1,6 @@
 <h1>Listing comments</h1>
 
-<table>
+<table class="table table-hover" style="max-width:1000px;min-width:1000px;margin-right:auto;margin-left:auto;">
   <tr>
     <th>Author</th>
     <th>Body</th>
@@ -15,7 +15,7 @@
     <td><%= comment.author %></td>
     <td><%= comment.body %></td>
     <td><%= comment.posted_on %></td>
-    <td><%= link_to 'Show', comment %></td>
+    <td><%= link_to 'Show', comment, :class=>"btn btn-default"%></td>
     <!--<td><%= link_to 'Edit', edit_comment_path(comment) %></td>
     <td><%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
   </tr>
@@ -24,4 +24,4 @@
 
 <br />
 
-<%= link_to 'New Comment', new_comment_path %>
+<%= link_to 'New Comment', new_comment_path, :class=>"btn btn-default" %>

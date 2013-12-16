@@ -1,41 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+<table class="header blog table table-condensed">
+  <tr>
+    <td><strong>Title:</strong></td>
+    <td><%= @post.title %></td>
+  </tr>
+  <tr>
+    <td><strong>Author:</strong></td>
+    <td><%= @post.author %></td>
+  </tr>
+  <tr>
+    <td><strong>Body:</strong></td>
+    <td><%= @post.body %></td>
+  </tr>
+</table>
 
-<p>
-  <b>Author:</b>
-  <%= @post.author %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @post.body %>
-</p>
-
-<style>
-  td{
-    border:1px solid black;
-    position:relative;
-  }
-</style>
-<table style="text-indent:1em;" class="table table-hover">
-  <th><b>Comments:</b></th>
+<table class="blog table table-hover table-condensed">
+  <tr><td><h3>Comments</h2></td></tr>
   <% @comments.each do |comment| %>
 	  <% if comment.posted_on == @post.title %>
-		  <tr style="text-indent:2em;">
-		    <td><b>Posted by: <%= comment.author %></b></td>
+		  <tr>
+		    <td class="commentauthor"><b>Posted by: <%= comment.author %></b></td>
 		  </tr>
-		  <tr style="text-indent:2em;">
-		    <td style="text-indent:4em;"><%= comment.body %></td>
+		  <tr>
+		    <td class="actualcomment"><%= comment.body %></td>
 	 	 </tr>
 	  <% end %>
   <% end %>
 </table>
 
-<%= link_to 'Leave a comment', new_comment_path(:title => @post.title), {:class=>"btn  btn-default"} %>
-
-<%= link_to 'Back', :back, {:class=>"btn  btn-default"}%>
-
+<%= link_to 'Back', :back, {:class=>"btn  btn-default backfooter"}%>
+<%= link_to 'Leave a comment', new_comment_path(:title => @post.title), {:class=>"btn  btn-default footer"} %>
