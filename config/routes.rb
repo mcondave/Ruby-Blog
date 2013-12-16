@@ -1,4 +1,9 @@
 Blog::Application.routes.draw do
+  resources :comments
+
+  resources :posts
+
+  resources :users
 
   get "contributor/index"
 
@@ -11,14 +16,6 @@ Blog::Application.routes.draw do
   get "home_page/index"
 
   get "home_page/login"
-
-  resources :comments
-
-
-  resources :posts
-
-
-  resources :users
 
 
   # The priority is based upon order of creation:

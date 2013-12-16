@@ -20,8 +20,7 @@
     <%= f.text_field :body %>
   </div>
   <div class="field">
-    <%= f.label :posted_on %><br />
-    <%= f.text_field :posted_on %>
+    <%= f.hidden_field :posted_on, :value => params[:title] %>
   </div>
   <div class="actions">
     <%= f.submit %>

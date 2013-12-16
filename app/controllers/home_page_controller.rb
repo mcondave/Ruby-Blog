@@ -4,6 +4,7 @@ class HomePageController < ApplicationController
   end
 
   def login
+
   end
 
   def verify
